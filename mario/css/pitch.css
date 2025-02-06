@@ -1,0 +1,73 @@
+/* Resetando margens e padding para evitar problemas no layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do cenário principal */
+.nintendo { /* Corrigido erro de digitação */
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid rgb(35, 160, 35);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF);
+}
+
+/* Configuração do cano */
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animation 1.5s infinite linear;
+}
+
+/* Configuração do Mario */
+.mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Classe para ativar o pulo do Mario */
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+/* Configuração das nuvens */
+.clouds {
+    position: absolute;
+    width: 550px;
+    animation: clouds-animation 10s infinite linear;
+}
+
+/* Animação do cano se movendo */
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+/* Animação do pulo do Mario */
+@keyframes jump {
+    0% { bottom: 0; }
+    40% { bottom: 180px; }
+    50% { bottom: 180px; }
+    60% { bottom: 180px; }
+    100% { bottom: 0; }
+}
+
+/* Animação das nuvens corrigida */
+@keyframes clouds-animation {
+    from {
+        left: 100%; /* Inicia fora da tela */
+    }
+    to {
+        left: -550px; /* Sai pela esquerda completamente */
+    }
+}
