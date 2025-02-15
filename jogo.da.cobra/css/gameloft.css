@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0; /*margem*/
+    padding: 0; /*preenchimento*/
+    box-sizing: border-box; /*dimensionamento de caixa*/
+    font-family: "Poppings", sans-serif; /*fonte de texto*/
+}
+
+body {
+    /*background: url(/imagem/green-snake.jpg);*/
+    background-color: #191919; /*cor de fundo*/
+    display: flex; /*utilizada para definir como um elemento será exibido na página*/
+    min-height: 100vh; /*altura minima*/
+    align-items: center; /*alinhamento de texto*/
+    justify-content: center; /*usada para alinhar os elementos ao longo do eixo principal*/
+    flex-direction: column; /*flexão de direcionamento*/
+    color: white; /*cor de texto*/
+}
+
+canvas {
+    background-color: #111; /*cor de fundo*/
+}
+
+.score {
+    display: flex; /*utilizada para definir como um elemento será exibido na página*/
+    flex-direction: column; /*flexão de direcionamento*/
+    align-items: center; /*alinhamento de itens*/
+    font-size: 1.8rem; /*tamanho da fonte de texto*/
+}
+
+.score--value {
+    font-weight: 700; /*espessura da fonte*/
+    font-size: 4.5rem; /*tamanho da fonte de texto*/
+    display: block; /*utilizada para definir como um elemento será exibido na página*/
+    margin-top: -10px; /*margem de cima*/
+}
+
+.menu-screen {
+    position: absolute; /*posição*/
+    display: none; /*utilizada para definir como um elemento será exibido na página*/
+    flex-direction: column; /*flexão de direcionamento*/
+    align-items: center; /*alinhamento de itens*/
+    z-index: 1; /*especifica a ordem da pilha de um elemento do anúncio*/
+}
+
+.game-over {
+    text-transform: uppercase; /*defier como as letras do texto serão apresentadas na tela*/
+    font-weight: 700; /*espessura da fonte*/
+    font-size: 3rem; /*tamanho da fonte de texto*/
+}
+
+.final-score {
+    font-weight: 500; /*espessura da fonte*/
+    font-size: 1.5rem; /*tamanho da fonte de texto*/
+}
+
+.btn-play {
+    border: none; /*borda*/
+    border-radius: 100px; /*raio da borda*/
+    padding: 10px 15px 10px 12px; /*preenchimento*/
+    font-size: 1rem; /*tamanho da fonte de texto*/
+    font-weight: 600; /*espessura da fonte*/
+    color: #333; /*cor de texto*/
+    margin-top: 40px; /*margem de cima*/
+    display: flex; /*utilizada para definir como um elemento será exibido na página*/
+    align-items: center; /*alinhamento de itens*/
+    justify-content: center; /*usada para alinhar os elementos ao longo do eixo principal*/
+    gap: 5px; /*distância*/
+    cursor: pointer;
+}

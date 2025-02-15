@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jogo da cobrinha</title>
+    <link rel="stylesheet" href="/css/gameloft.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+    <div class="score">score: <span class="score--value">00</span></div>
+
+    <div class="menu-screen"> <!--  -->
+        <span class="game-over">game over</span> <!-- area de inclusão de texto -->
+        <span class="final-score">score <span>00</span></span>
+
+        <button class="btn-play"> <!-- button = botão-->
+            <span class="material-symbols-outlined">
+                play_circle
+            </span>
+            
+            Jogar novamente
+        </button>
+    </div>
+
+    <canvas width="600" height="600"></canvas> <!-- canvas é a tela de desenho / area de renderização dinamica de graficos -->
+
+    <script src="/js/cobrinha.js"></script>
+</body>
+</html>
